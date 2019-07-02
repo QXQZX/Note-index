@@ -7,7 +7,7 @@ Beans.xml
 <bean id="dataSource" class="">
   <property name="driverClass" value=""/>
   <property name="jdbcUrl" value=""/>
-  <property name="user" value=""/>
+  <property name="username" value=""/>
   <property name="password" value=""/>
 </bean>
 ```

@@ -1,3 +1,5 @@
+
+
 #### 配置一个bean对象的三种方式
 
 ```xml
@@ -94,7 +96,7 @@ xmlns:p="http://www.springframework.org/schema/p"
 3. 有无id的  获取方式
 
 ```java
-// 无id 
+// 无id  
 // 如果@Component  没有配置id  则通过  类名.class（或者是 接口名.class）获取
 UserServiceImpl bean = (UserServiceImpl) context.getBean(UserService.class); // 接口
 UserServiceImpl bean = context.getBean(UserServiceImpl.class);//类名
@@ -142,7 +144,7 @@ UserServiceImpl bean = (UserServiceImpl) context.getBean("userService");
 关闭容器
 
 ```java
-context.getClass().getMethod("close").invoke(context); // 反射 
+context.getClass().getMethod("close").invoke(context); // 反射 思想
 ```
 
 
