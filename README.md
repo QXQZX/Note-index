@@ -40,7 +40,7 @@
 
 
 四、Java框架篇
-- [ ] Spring (正在学)
-- [ ] SpringMVC
-- [ ] Mybatis (正在学)
+- [x] Spring 
+- [ ] SpringMVC(正在学)
+- [x] Mybatis
 
