@@ -81,7 +81,11 @@ UserMapper.xml文件
 </mapper>
 ```
 
-在全局配置文件中添加映射 SqlMapConfig.xml
+
+
+
+
+在全局配置文件中添加映射配置文件 SqlMapConfig.xml
 
 ```xml
 <!--    告诉mybatis加载映射文件    -->

@@ -148,3 +148,14 @@ after:最终通知(应用：清理现场)
 
 
 
+四、导包
+
+aopalliance-1.0.jar     AOP联盟规范
+
+aspectjweaver-1.8.4.jar   规范
+
+spring-aop-4.3.18.RELEASE.jar   AOP实现
+
+spring-aspects-4.3.18.RELEASE.jar    aspectj实现
+
+ 
