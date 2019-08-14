@@ -35,12 +35,12 @@
 - [x] Cookie和Session
 - [x] JSP, EL, JSTL表达式
 - [x] Filter和Listener
-- [ ] Maven
+- [x] Maven
 - [ ] Redis
 
 
 四、Java框架篇
 - [x] Spring 
-- [ ] SpringMVC(正在学)
+- [x] SpringMVC
 - [x] Mybatis
 
