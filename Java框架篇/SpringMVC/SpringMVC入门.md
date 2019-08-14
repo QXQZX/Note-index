@@ -40,6 +40,21 @@ Spring MVC主要由DispatcherServlet、处理器映射【找控制器】、适�
   <url-pattern>*.do</url-pattern>
 </servlet-mapping>
 
+<!-- 配置编码过滤器  -->
+<filter>
+  <filter-name>EncodingFilter</filter-name>
+  <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  <init-param>
+    <param-name>encoding</param-name>
+    <param-value>UTF-8</param-value>
+  </init-param>
+</filter>
+
+<filter-mapping>
+  <filter-name>EncodingFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
+
 ```
 
 第三步：在WEB-INF目录下创建DispatcherServlet-servlet.xml  并添加如下配置
@@ -67,6 +82,8 @@ Spring MVC主要由DispatcherServlet、处理器映射【找控制器】、适�
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
     <!-- 2. 配置控制器处理适配器 执行Controller 处理映射-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+  
+ <!-- <bean class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter"/>-->
     <!-- 3.配置一个控制器 相当于赔了一个访问路径-->
     <bean name="/user.do" class="com.gyf.backoffice.web.controller.UserController"/>
     <!-- 4.配置springmvc视图解析器
